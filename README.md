@@ -1,2 +1,6 @@
 # project-euler-python
-projecteuler.net problems in python 3
+Python 3 solutions for projecteuler.net problems
+
+`$ python3 run.py <problem number>`
+
+e.g.: `$ python3 run.py 1`
