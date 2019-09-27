@@ -7,7 +7,7 @@ import solutions.pe_utils as pe
 
 def solution():
     count = 0
-    for i in pe.primes():
+    for i in pe.PrimesIterator():
         count += 1
         if count == 10001:
             return i

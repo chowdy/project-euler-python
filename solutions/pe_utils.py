@@ -47,7 +47,3 @@ class PrimesIterator:
 
         self.count += 1
 
-
-def primes(max_num=0, max_count=0):
-    pi = PrimesIterator()
-    return iter(pi)
