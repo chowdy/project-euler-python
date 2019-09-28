@@ -15,10 +15,10 @@ solution = None
 # noinspection PyBroadException
 try:
     solution = importlib.import_module(f'solutions.{solution_input}')
-except Exception as err:
-    print(f'Error Importing solutions.{solution_input}')
+except ModuleNotFoundError:
+    print(f'Couldn\'t find module: solutions.{solution_input}')
     exit(1)
 
 # Run the solution and print the answer it returns
 answer = solution.solution()
-print(f'{answer}')
+print(answer)
